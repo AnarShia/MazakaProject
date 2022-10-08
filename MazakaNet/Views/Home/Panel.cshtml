@@ -1,0 +1,30 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model Todoist.Net.Models.Item
+
+
+<h1 class="text-info">Item</h1>
+<form asp-controller="TodoIstApi" asp-action="AddItems" method="get" role="form">
+    <h4>Create new item</h4>
+    <hr />
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Description" class="col-md-2"></label>
+        <div class="col-md-10">
+            <input asp-for="Description" class="form-control" />
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Content" class="col-md-2"></label>
+        <div class="col-md-10">
+            <input asp-for="Content" class="form-control" />
+            <span asp-validation-for="Content" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="offset-md-2 col-md-10">
+            <button type="submit" class="btn btn-success">Register</button>
+        </div>
+    </div>
+</form>

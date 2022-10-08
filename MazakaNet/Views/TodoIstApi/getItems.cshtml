@@ -1,0 +1,23 @@
+﻿@model System.Collections.Generic.IEnumerable<Todoist.Net.Models.Item>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">UserId</th>
+        <th scope="col">isChecked</th>
+        <th scope="col">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th scope="row">@item.UserId</th>
+            <td>@item.IsChecked</td>
+            <td>@item.Description</td>
+        </tr>
+    }
+  
+ 
+    </tbody>
+</table>

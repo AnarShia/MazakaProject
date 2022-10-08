@@ -1,0 +1,62 @@
+﻿@model Todoist.Net.Models.Resources
+
+
+Total Resource: @Model.Items.Count
+@{
+    var itemList = Model.Items;
+
+}
+
+<h4>Projects</h4>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Collapsed</th>
+        <th scope="col">Color</th>
+        <th scope="col">Shared</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var project in Model.Projects)
+    {
+        <tr>
+            <th scope="row">@project.Id</th>
+            <td>@project.Name</td>
+            <td>@project.Collapsed</td>
+            <td>@project.Color</td>
+            <td>@project.Shared</td>
+            
+        </tr>
+    }
+    </tbody>
+</table>
+
+<h4>Items</h4>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">UserId</th>
+        <th scope="col">Description</th>
+        <th scope="col">Priority</th>
+        <th scope="col">Section</th>
+        <th scope="col">ProjectId</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in itemList.OrderBy(x => x.ProjectId.ToString()))
+    {
+        <tr>
+            <th scope="row">@item.Id</th>
+            <td>@item.UserId</td>
+            <td>@item.Description</td>
+            <td>@item.Priority</td>
+            <td>@item.Section</td>
+            <td>@item.ProjectId</td>
+
+        </tr>
+    }
+    </tbody>
+</table>

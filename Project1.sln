@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazakaNet", "MazakaNet\MazakaNet.csproj", "{72BCCFF2-A9D7-419E-B835-7CCD8CF814CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72BCCFF2-A9D7-419E-B835-7CCD8CF814CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72BCCFF2-A9D7-419E-B835-7CCD8CF814CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72BCCFF2-A9D7-419E-B835-7CCD8CF814CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72BCCFF2-A9D7-419E-B835-7CCD8CF814CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D30D85BB-21A4-48BC-91DD-537A146585C5}
+	EndGlobalSection
+EndGlobal
